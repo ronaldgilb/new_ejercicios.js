@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>punto2.ejercicio1</title>
+    <script>
+        function calculodia(fecha) {
+            let f = new Date(fecha);
+            return f.getDay(); 
+        }
+
+        function datos(nombre, apellido, ciudad, fechaNac) {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.ciudad = ciudad;
+            this.dia = calculodia(fechaNac);
+        }
+
+        let dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+        let mio = new datos("Edgar Francisco", "Gaitán Martínez", "Bogotá", "April 6, 1968");
+
+        document.write("Me llamo " + mio.nombre + " " + mio.apellido + 
+                       ", soy de " + mio.ciudad + " y nací un día " + dias[mio.dia]);
+    </script>
+</head>
+<body>
+</body>
+</html>

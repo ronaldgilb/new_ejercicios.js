@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>punto3.ejercicio1</title>
+    <script>
+        let fecha = new Date();
+        document.write("<p>Fecha actual: " + fecha.toLocaleDateString() + "</p>");
+
+        let num = 9;
+        document.write("<p>Raíz cuadrada de " + num + " es " + Math.sqrt(num) + "</p>");
+
+        let texto = "Hola, JavaScript!";
+        document.write("<p>Longitud de la cadena: " + texto.length + "</p>");
+
+        let frutas = ["Manzana", "Banana", "Cereza"];
+        document.write("<p>Primera fruta: " + frutas[0] + "</p>");
+
+        function Persona(nombre, edad) {
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+
+        let persona1 = new Persona("Carlos", 25);
+        document.write("<p>Persona: " + persona1.nombre + ", " + persona1.edad + " años</p>");
+    </script>
+</head>
+<body>
+</body>
+</html>

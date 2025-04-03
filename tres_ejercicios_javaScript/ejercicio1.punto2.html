@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <title>punto1.ejerciocio1</title>
+    <script>
+        function calcularAreaCirculo() {
+            let radio = 12;
+            let area = Math.PI * Math.pow(radio, 2);
+            document.getElementById("resultado").innerText = "El área del círculo es: " + area.toFixed(2) + " cm2";
+        }
+    </script>
+</head>
+<body onload="calcularAreaCirculo()">
+    <h2>Cálculo del área de un círculo</h2>
+    <p id="resultado"></p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio2.punto2</title>
+</head>
+<body bgcolor="#FFFFDD">
+    <form name="formulario" method="post" action="#">
+        <table width="80%" border="0">
+            <tr>
+                <td align="right">Nombres y Apellidos</td>
+                <td><input type="text" name="Nombres" value="Marivy Guzmán Gonzalez"></td>
+            </tr>
+            <tr>
+                <td align="right">Cédula</td>
+                <td><input type="text" name="identificacion" value="656667"></td>
+            </tr>
+            <tr>
+                <td align="right"><input type="submit" name="Enviar" value="Enviar"></td>
+                <td><input type="reset" name="limpiar" value="Borrar"></td>
+            </tr>
+        </table>
+    </form>
+    
+    <pre>
+    <script>
+        document.writeln("<hr> Las siguientes son las características de esta página:");
+        let tit = document.title;
+        document.writeln("Título: <b>" + tit + "</b>");
+        
+        let fondo = document.bgColor;
+        document.writeln("Color de fondo: <b>" + fondo + "</b>");
+        
+        let nom = document.formulario.Nombres.value;
+        document.writeln("El valor del control de texto \"Nombres\" es <b>" + nom + "</b>");
+        
+        let num;
+        if (document.formulario.identificacion.value > 1000000) {
+            num = " sí";
+        } else {
+            num = " no";
+        }
+        document.writeln("El número de cédula de <b>" + nom + num + " es mayor que 1000000</b>");
+        
+        let boton = document.formulario.limpiar.value;
+        document.writeln("El valor del botón de la derecha es <b>" + boton + "</b>");
+    </script>
+    </pre>
+</body>
+</html>
